@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 引入字体文件 */
+@font-face {
+font-family: "CustomFont";
+/* woff2压缩率高，性能好 */
+/* ttf全面 */
+src: url('@/assets/PLKaiTi.ttf'); 
+font-style: normal;
+font-weight: normal;
+}
