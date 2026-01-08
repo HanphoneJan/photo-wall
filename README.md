@@ -1,4 +1,4 @@
-# 🖼️ 寒枫的照片墙 | Hanphone's Photo Atlas
+# 🖼️ 寒枫的照片墙 | Hanphone's Photo Wall
 
 [![GitHub Stars](https://img.shields.io/github/stars/HanphoneJan/photo-atlas?style=for-the-badge&color=FFD700&logo=github)](https://github.com/HanphoneJan/photo-wall)
 [![Last Update](https://img.shields.io/badge/Last%20Update-2025.03-FF6347?style=for-the-badge&logo=clock)](https://github.com/HanphoneJan/photo-wall)
