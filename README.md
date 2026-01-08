@@ -1,7 +1,7 @@
 # 🖼️ 寒枫的照片墙 | Hanphone's Photo Atlas
 
-[![GitHub Stars](https://img.shields.io/github/stars/HanphoneJan/photo-atlas?style=for-the-badge&color=FFD700&logo=github)](https://github.com/HanphoneJan/photo-atlas)
-[![Last Update](https://img.shields.io/badge/Last%20Update-2025.03-FF6347?style=for-the-badge&logo=clock)](https://github.com/HanphoneJan/photo-atlas)
+[![GitHub Stars](https://img.shields.io/github/stars/HanphoneJan/photo-atlas?style=for-the-badge&color=FFD700&logo=github)](https://github.com/HanphoneJan/photo-wall)
+[![Last Update](https://img.shields.io/badge/Last%20Update-2025.03-FF6347?style=for-the-badge&logo=clock)](https://github.com/HanphoneJan/photo-wall)
 [![Online Demo](https://img.shields.io/badge/Online%20Demo-Visit-4169E1?style=for-the-badge&logo=chrome)](https://www.hanphone.top/atlas/)
 
 ## 📌 项目简介
@@ -16,7 +16,7 @@
 
 - 个人图片资产管理：集中存储、分类整理
 - 可视化展示：高颜值画廊布局，支持多维度浏览
-- 跨端分享：Web端在线访问 + Android APP离线查看
+- 跨端分享：Web端在线访问 + PWA APP离线查看
 - 轻量高效：无冗余功能，专注核心体验
 
 ### 🚀 技术架构栈
@@ -72,7 +72,7 @@
 
 | 平台      | 访问方式                                              | 核心特性                           |
 | --------- | ----------------------------------------------------- | ---------------------------------- |
-| 🌐 Web端   | [hanphone.top/atlas](https://www.hanphone.top/atlas/) | 在线浏览、高清预览、分享链接       |
+| 🌐 Web端   | [www.hanphone.top/atlas](https://www.hanphone.top/atlas/) | 在线浏览、高清预览、分享链接       |
 | 📱 Android | WebView封装APP                                        | 离线缓存、原生上传、沉浸式全屏展示 |
 
 ## ✨ 核心功能
