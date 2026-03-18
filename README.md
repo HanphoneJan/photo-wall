@@ -88,7 +88,7 @@
 若使用过程中遇到bug或有功能建议，欢迎通过以下方式反馈：
 
 - GitHub Issues：[提交反馈](https://github.com/HanphoneJan/photo-atlas/issues)
-- 在线演示：[访问照片墙](https://hanphone.cn/atlas/)  当前该在线演示已进行更新，但未同步到该项目
+- 在线演示：[访问照片墙](https://hanphone.cn/atlas/) 
 
 ---
 
