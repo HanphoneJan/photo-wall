@@ -1,7 +1,7 @@
 # 🖼️ 寒枫的照片墙 | Hanphone's Photo Wall
 
 [![GitHub Stars](https://img.shields.io/github/stars/HanphoneJan/photo-wall?style=for-the-badge&color=FFD700&logo=github)](https://github.com/HanphoneJan/photo-wall)
-[![Online Demo](https://img.shields.io/badge/Online%20Demo-Visit-4169E1?style=for-the-badge&logo=chrome)](https://www.hanphone.top/atlas/)
+[![Online Demo](https://img.shields.io/badge/Online%20Demo-Visit-4169E1?style=for-the-badge&logo=chrome)](https://hanphone.cn/atlas/)
 
 ## 📌 项目简介
 
@@ -67,12 +67,6 @@
   - 原生交互：调用相机/相册上传图片，适配系统权限
   - 沉浸式体验：全屏展示，优化移动端操作逻辑
 
-## 📱 跨端支持
-
-| 平台      | 访问方式                                              | 核心特性                           |
-| --------- | ----------------------------------------------------- | ---------------------------------- |
-| 🌐 Web端   | [www.hanphone.top/atlas](https://www.hanphone.top/atlas/) | 在线浏览、高清预览、分享链接       |
-| 📱 Android | WebView封装APP                                        | 离线缓存、原生上传、沉浸式全屏展示 |
 
 ## ✨ 核心功能
 
@@ -94,13 +88,10 @@
 若使用过程中遇到bug或有功能建议，欢迎通过以下方式反馈：
 
 - GitHub Issues：[提交反馈](https://github.com/HanphoneJan/photo-atlas/issues)
-- 在线演示：[访问照片墙](https://www.hanphone.top/atlas/)  当前该在线演示已进行更新，但未同步到该项目
+- 在线演示：[访问照片墙](https://hanphone.cn/atlas/)  当前该在线演示已进行更新，但未同步到该项目
 
 ---
 
-<p align="center">
-  <sub>🌟 觉得不错？欢迎 Star 支持一下～</sub>
-</p>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=HanphoneJan&label=Profile%20Views&color=brightgreen&style=flat-square" alt="Profile Views">
-</p>
+## 📊 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HanphoneJan/photo-wall&type=Date)](https://star-history.com/#HanphoneJan/photo-wall&Date)
