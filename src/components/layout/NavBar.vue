@@ -255,7 +255,7 @@ const isAdminPage = computed(() => route.path.startsWith('/admin'));
 const isPhotoWallPage = computed(() => route.path === '/index' || route.path === '/');
 
 // 照片墙视图模式
-const atlasViewMode = ref<'masonry' | 'brutalist'>('masonry');
+const atlasViewMode = ref<'masonry' | 'brutalist'>('brutalist');
 
 // 从 localStorage 读取视图模式
 onMounted(() => {
