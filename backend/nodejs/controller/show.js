@@ -10,7 +10,7 @@ try {
   }
 } catch (err) {
   // 加载失败时直接抛出错误，不再不再提供回退逻辑
-  throw new Error(`无法无法初始化数据库连接: ${err.message}``);
+  throw new Error(`无法初始化数据库连接: ${err.message}`);
 }
 
 async function show(req, res) {
