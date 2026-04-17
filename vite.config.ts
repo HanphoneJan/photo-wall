@@ -7,6 +7,9 @@ import vue from '@vitejs/plugin-vue'  // 导入vue插件
 import { createHtmlPlugin } from 'vite-plugin-html';  // 导入vite-plugin-html插件，自定义HTML模板
 import path from 'path'  // 导入path模块
 import {VitePWA} from 'vite-plugin-pwa'; // 导入 VitePWA
+import AutoImport from 'unplugin-auto-import/vite'  // 自动导入 API
+import Components from 'unplugin-vue-components/vite'  // 自动导入组件
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'  // Element Plus 解析器
 
 // 构建时自动生成版本号，格式如 v2026.04.04-a1b2，每次构建都会自动变化
 const now = new Date()
@@ -20,6 +23,15 @@ export default defineConfig({
   // 插件配置
   plugins: [
     vue(), // 注册vue插件
+    // 自动导入 Element Plus 组件和 API
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+      dts: 'src/auto-imports.d.ts',  // 生成类型声明文件
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+      dts: 'src/components.d.ts',  // 生成类型声明文件
+    }),
     // 注册自定义HTML插件
     createHtmlPlugin({
       minify: false,  // 禁用HTML压缩
@@ -124,9 +136,18 @@ export default defineConfig({
     rollupOptions: {
       // 传递给Rollup的配置选项
       output: {
-        chunkFileNames: 'assets/js/[name].js',
-        entryFileNames: 'assets/js/[name].js',
-        assetFileNames: 'assets/[name].[extname]',
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        // 手动分块策略
+        manualChunks: {
+          // Element Plus 单独打包
+          'element-plus': ['element-plus'],
+          // Vue 生态单独打包
+          'vue-vendor': ['vue', 'vue-router', 'pinia'],
+          // 工具库单独打包
+          'utils': ['axios'],
+        },
       },
     },
   },
@@ -137,7 +158,8 @@ export default defineConfig({
     }
   },
   define: {
-    'process.env': process.env
+    // 只暴露必要的环境变量，避免暴露所有系统环境变量
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }
 })
 
