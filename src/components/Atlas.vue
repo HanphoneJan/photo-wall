@@ -204,7 +204,7 @@ const intro = ref('生活の瞬間を捉え、感動を記録する');
 const welcomeTitle = ref('寒楓のフォトギャラリー');
 
 // 视图模式：masonry(瀑布流) | brutalist(野兽派便利贴)
-const viewMode = ref<'masonry' | 'brutalist'>('masonry');
+const viewMode = ref<'masonry' | 'brutalist'>('brutalist');
 
 // 便利贴颜色配置
 const noteColors = [
